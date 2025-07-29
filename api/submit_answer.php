@@ -30,7 +30,7 @@ $conn->query("INSERT INTO responses (session_id, question_id, chosen_option, con
               VALUES (1, $qid, '$opt', $conf, 10, $hintCost, $score)");
 
 echo json_encode([
-  "message" => "✅ Answer saved. Q$qid | Option: $opt | Conf: $conf | Score: $score",
+  "message" => "Session 1 | Q$qid | Opt: $opt | Conf: $conf | Score: $score",
   "score" => $score,
   "next" => true
 ]);
